@@ -1,0 +1,29 @@
+Program Behavior and Results:
+1. Handling ZeroDivisionError:
+
+The try-except block captures the ZeroDivisionError when the user attempts to divide a number by zero. 
+Instead of the program crashing, 
+it prints an error message: "Error: Division by zero is not allowed."
+
+2. Handling NegativeNumberError:
+
+If the user enters a negative number for either input,
+the custom_made NegativeNumberError is raised.
+The error message "Error: Negative numbers are not allowed." is displayed, 
+and no further calculations are performed. 
+This ensures that only positive numbers are processed by the division operation.
+
+3. Using Custom Exceptions:
+
+Custom exceptions like NegativeNumberError allow for more targeted error handling. 
+In some cases, we may want to define custom errors according to the application of our program,
+which may not be possible using in-built exceptions of python.
+In those cases, we can make our own exceptions.
+
+4. What I Learned About Error and Exception Handling:
+
+The try-except mechanism is used for managing potential errors without halting program execution due to errors.
+It provides flexibility in dealing with specific errors.
+Using custom exceptions helps in clearly defining what type of situations are not acceptable in a particular program.
+The else block ensures that the result is printed only if no exceptions were raised
+the finally block guarantees that the final message always gets printed, regardless of whether an error occurred or not.
